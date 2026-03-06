@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Browser profiles (chứa cookies/cache cá nhân)
+browser_profiles/
+
+# Folders to exclude
+train/
+docs/
+ui/
+
+# Output files
+output.xlsx
+*.xlsx
+*.csv
+!base/*.xlsx
+
+# Debug files
+captcha_debug/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive config (nếu có password thật)
+config.local.json

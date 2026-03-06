@@ -1,0 +1,47 @@
+{
+    "tax-gov": "https://tracuunnt.gdt.gov.vn/tcnnt/mstcn.jsp",
+    "tax-3rd": "https://masothue.com",
+    "key": "",
+    "parallel": {
+        "enabled": true,
+        "num_workers": 5,
+        "comment": "Số lượng browser instances chạy song song (1-10). Khuyến nghị: 5",
+        "use_profiles": true,
+        "profiles_dir": "./browser_profiles",
+        "refresh_after_errors": 2,
+        "refresh_after_lookups": 10,
+        "comment_refresh": "Tự động refresh tab sau N lỗi liên tiếp hoặc N lần tra cứu để tránh session bị lỗi"
+    },
+    "accounts": [
+        {
+            "id": 1,
+            "username": "account1@example.com",
+            "password": "password1",
+            "note": "Tài khoản 1"
+        },
+        {
+            "id": 2,
+            "username": "account2@example.com",
+            "password": "password2",
+            "note": "Tài khoản 2"
+        },
+        {
+            "id": 3,
+            "username": "account3@example.com",
+            "password": "password3",
+            "note": "Tài khoản 3"
+        },
+        {
+            "id": 4,
+            "username": "account4@example.com",
+            "password": "password4",
+            "note": "Tài khoản 4"
+        },
+        {
+            "id": 5,
+            "username": "account5@example.com",
+            "password": "password5",
+            "note": "Tài khoản 5"
+        }
+    ]
+}

@@ -1,0 +1,1840 @@
+{
+  "timestamp": "20260306_110644",
+  "total_images": 303,
+  "correct": 295,
+  "accuracy": 97.35973597359737,
+  "error_types": {
+    "1_char_wrong": 7,
+    "2_chars_wrong": 1
+  },
+  "char_errors": {
+    "n→h": 2,
+    "3→4": 1,
+    "p→d": 1,
+    "p→b": 1,
+    "h→n": 1,
+    "6→5": 1,
+    "a→m": 1,
+    "m→a": 1
+  },
+  "results": [
+    {
+      "filename": "23wyf.png",
+      "ground_truth": "23wyf",
+      "predicted": "24wyf",
+      "correct": false
+    },
+    {
+      "filename": "24x7e.png",
+      "ground_truth": "24x7e",
+      "predicted": "24x7e",
+      "correct": true
+    },
+    {
+      "filename": "2dkee.png",
+      "ground_truth": "2dkee",
+      "predicted": "2dkee",
+      "correct": true
+    },
+    {
+      "filename": "2dr2n.png",
+      "ground_truth": "2dr2n",
+      "predicted": "2dr2n",
+      "correct": true
+    },
+    {
+      "filename": "2ex3c.png",
+      "ground_truth": "2ex3c",
+      "predicted": "2ex3c",
+      "correct": true
+    },
+    {
+      "filename": "2gng5.png",
+      "ground_truth": "2gng5",
+      "predicted": "2gng5",
+      "correct": true
+    },
+    {
+      "filename": "2ke3k.png",
+      "ground_truth": "2ke3k",
+      "predicted": "2ke3k",
+      "correct": true
+    },
+    {
+      "filename": "2md5y.png",
+      "ground_truth": "2md5y",
+      "predicted": "2md5y",
+      "correct": true
+    },
+    {
+      "filename": "2reah.png",
+      "ground_truth": "2reah",
+      "predicted": "2reah",
+      "correct": true
+    },
+    {
+      "filename": "2rmf7.png",
+      "ground_truth": "2rmf7",
+      "predicted": "2rmf7",
+      "correct": true
+    },
+    {
+      "filename": "2xehr.png",
+      "ground_truth": "2xehr",
+      "predicted": "2xehr",
+      "correct": true
+    },
+    {
+      "filename": "2xn6k.png",
+      "ground_truth": "2xn6k",
+      "predicted": "2xn6k",
+      "correct": true
+    },
+    {
+      "filename": "335r6.png",
+      "ground_truth": "335r6",
+      "predicted": "335r6",
+      "correct": true
+    },
+    {
+      "filename": "33cyw.png",
+      "ground_truth": "33cyw",
+      "predicted": "33cyw",
+      "correct": true
+    },
+    {
+      "filename": "343fm.png",
+      "ground_truth": "343fm",
+      "predicted": "343fm",
+      "correct": true
+    },
+    {
+      "filename": "34e5m.png",
+      "ground_truth": "34e5m",
+      "predicted": "34e5m",
+      "correct": true
+    },
+    {
+      "filename": "36ed5.png",
+      "ground_truth": "36ed5",
+      "predicted": "36ed5",
+      "correct": true
+    },
+    {
+      "filename": "36hcc.png",
+      "ground_truth": "36hcc",
+      "predicted": "36hcc",
+      "correct": true
+    },
+    {
+      "filename": "36kbb.png",
+      "ground_truth": "36kbb",
+      "predicted": "36kbb",
+      "correct": true
+    },
+    {
+      "filename": "3b62y.png",
+      "ground_truth": "3b62y",
+      "predicted": "3b62y",
+      "correct": true
+    },
+    {
+      "filename": "3d547.png",
+      "ground_truth": "3d547",
+      "predicted": "3d547",
+      "correct": true
+    },
+    {
+      "filename": "3ep52.png",
+      "ground_truth": "3ep52",
+      "predicted": "3ep52",
+      "correct": true
+    },
+    {
+      "filename": "3ep6m.png",
+      "ground_truth": "3ep6m",
+      "predicted": "3ep6m",
+      "correct": true
+    },
+    {
+      "filename": "3kf28.png",
+      "ground_truth": "3kf28",
+      "predicted": "3kf28",
+      "correct": true
+    },
+    {
+      "filename": "3mekm.png",
+      "ground_truth": "3mekm",
+      "predicted": "3mekm",
+      "correct": true
+    },
+    {
+      "filename": "3n35a.png",
+      "ground_truth": "3n35a",
+      "predicted": "3n35a",
+      "correct": true
+    },
+    {
+      "filename": "3p7rr.png",
+      "ground_truth": "3p7rr",
+      "predicted": "3p7rr",
+      "correct": true
+    },
+    {
+      "filename": "3phhn.png",
+      "ground_truth": "3phhn",
+      "predicted": "3phhn",
+      "correct": true
+    },
+    {
+      "filename": "3rgga.png",
+      "ground_truth": "3rgga",
+      "predicted": "3rgga",
+      "correct": true
+    },
+    {
+      "filename": "3wnbx.png",
+      "ground_truth": "3wnbx",
+      "predicted": "3wnbx",
+      "correct": true
+    },
+    {
+      "filename": "3x88k.png",
+      "ground_truth": "3x88k",
+      "predicted": "3x88k",
+      "correct": true
+    },
+    {
+      "filename": "45xm8.png",
+      "ground_truth": "45xm8",
+      "predicted": "45xm8",
+      "correct": true
+    },
+    {
+      "filename": "4bfyw.png",
+      "ground_truth": "4bfyw",
+      "predicted": "4bfyw",
+      "correct": true
+    },
+    {
+      "filename": "4d2gx.png",
+      "ground_truth": "4d2gx",
+      "predicted": "4d2gx",
+      "correct": true
+    },
+    {
+      "filename": "4d45w.png",
+      "ground_truth": "4d45w",
+      "predicted": "4d45w",
+      "correct": true
+    },
+    {
+      "filename": "4dbhn.png",
+      "ground_truth": "4dbhn",
+      "predicted": "4dbhn",
+      "correct": true
+    },
+    {
+      "filename": "4ew76.png",
+      "ground_truth": "4ew76",
+      "predicted": "4ew76",
+      "correct": true
+    },
+    {
+      "filename": "4hhcn.png",
+      "ground_truth": "4hhcn",
+      "predicted": "4hhcn",
+      "correct": true
+    },
+    {
+      "filename": "4rcm8.png",
+      "ground_truth": "4rcm8",
+      "predicted": "4rcm8",
+      "correct": true
+    },
+    {
+      "filename": "4wxkn.png",
+      "ground_truth": "4wxkn",
+      "predicted": "4wxkn",
+      "correct": true
+    },
+    {
+      "filename": "4xdam.png",
+      "ground_truth": "4xdam",
+      "predicted": "4xdam",
+      "correct": true
+    },
+    {
+      "filename": "55b5w.png",
+      "ground_truth": "55b5w",
+      "predicted": "55b5w",
+      "correct": true
+    },
+    {
+      "filename": "572wd.png",
+      "ground_truth": "572wd",
+      "predicted": "572wd",
+      "correct": true
+    },
+    {
+      "filename": "58afn.png",
+      "ground_truth": "58afn",
+      "predicted": "58afn",
+      "correct": true
+    },
+    {
+      "filename": "5b4k6.png",
+      "ground_truth": "5b4k6",
+      "predicted": "5b4k6",
+      "correct": true
+    },
+    {
+      "filename": "5b78p.png",
+      "ground_truth": "5b78p",
+      "predicted": "5b78p",
+      "correct": true
+    },
+    {
+      "filename": "5brcx.png",
+      "ground_truth": "5brcx",
+      "predicted": "5brcx",
+      "correct": true
+    },
+    {
+      "filename": "5cm2p.png",
+      "ground_truth": "5cm2p",
+      "predicted": "5cm2p",
+      "correct": true
+    },
+    {
+      "filename": "5ehd4.png",
+      "ground_truth": "5ehd4",
+      "predicted": "5ehd4",
+      "correct": true
+    },
+    {
+      "filename": "5fewf.png",
+      "ground_truth": "5fewf",
+      "predicted": "5fewf",
+      "correct": true
+    },
+    {
+      "filename": "5xh22.png",
+      "ground_truth": "5xh22",
+      "predicted": "5xh22",
+      "correct": true
+    },
+    {
+      "filename": "66xxe.png",
+      "ground_truth": "66xxe",
+      "predicted": "66xxe",
+      "correct": true
+    },
+    {
+      "filename": "6da4g.png",
+      "ground_truth": "6da4g",
+      "predicted": "6da4g",
+      "correct": true
+    },
+    {
+      "filename": "6engy.png",
+      "ground_truth": "6engy",
+      "predicted": "6engy",
+      "correct": true
+    },
+    {
+      "filename": "6knkn.png",
+      "ground_truth": "6knkn",
+      "predicted": "6knkn",
+      "correct": true
+    },
+    {
+      "filename": "6kr35.png",
+      "ground_truth": "6kr35",
+      "predicted": "6kr35",
+      "correct": true
+    },
+    {
+      "filename": "6kyhh.png",
+      "ground_truth": "6kyhh",
+      "predicted": "6kyhh",
+      "correct": true
+    },
+    {
+      "filename": "6m68x.png",
+      "ground_truth": "6m68x",
+      "predicted": "6m68x",
+      "correct": true
+    },
+    {
+      "filename": "6npca.png",
+      "ground_truth": "6npca",
+      "predicted": "6npca",
+      "correct": true
+    },
+    {
+      "filename": "6pm72.png",
+      "ground_truth": "6pm72",
+      "predicted": "6pm72",
+      "correct": true
+    },
+    {
+      "filename": "6pne2.png",
+      "ground_truth": "6pne2",
+      "predicted": "6pne2",
+      "correct": true
+    },
+    {
+      "filename": "715pn.png",
+      "ground_truth": "715pn",
+      "predicted": "715pn",
+      "correct": true
+    },
+    {
+      "filename": "74nry.png",
+      "ground_truth": "74nry",
+      "predicted": "74hry",
+      "correct": false
+    },
+    {
+      "filename": "76dfd.png",
+      "ground_truth": "76dfd",
+      "predicted": "76dfd",
+      "correct": true
+    },
+    {
+      "filename": "7888a.png",
+      "ground_truth": "7888a",
+      "predicted": "7888a",
+      "correct": true
+    },
+    {
+      "filename": "78fxp.png",
+      "ground_truth": "78fxp",
+      "predicted": "78fxp",
+      "correct": true
+    },
+    {
+      "filename": "7a42a.png",
+      "ground_truth": "7a42a",
+      "predicted": "7a42a",
+      "correct": true
+    },
+    {
+      "filename": "7by72.png",
+      "ground_truth": "7by72",
+      "predicted": "7by72",
+      "correct": true
+    },
+    {
+      "filename": "7cbr5.png",
+      "ground_truth": "7cbr5",
+      "predicted": "7cbr5",
+      "correct": true
+    },
+    {
+      "filename": "7dpce.png",
+      "ground_truth": "7dpce",
+      "predicted": "7ddce",
+      "correct": false
+    },
+    {
+      "filename": "7dtkt.png",
+      "ground_truth": "7dtkt",
+      "predicted": "7dtkt",
+      "correct": true
+    },
+    {
+      "filename": "7e2f2.png",
+      "ground_truth": "7e2f2",
+      "predicted": "7e2f2",
+      "correct": true
+    },
+    {
+      "filename": "7fkfg.png",
+      "ground_truth": "7fkfg",
+      "predicted": "7fkfg",
+      "correct": true
+    },
+    {
+      "filename": "7gdan.png",
+      "ground_truth": "7gdan",
+      "predicted": "7gdan",
+      "correct": true
+    },
+    {
+      "filename": "7rcfn.png",
+      "ground_truth": "7rcfn",
+      "predicted": "7rcfh",
+      "correct": false
+    },
+    {
+      "filename": "7rfcp.png",
+      "ground_truth": "7rfcp",
+      "predicted": "7rfcp",
+      "correct": true
+    },
+    {
+      "filename": "7y6xk.png",
+      "ground_truth": "7y6xk",
+      "predicted": "7y6xk",
+      "correct": true
+    },
+    {
+      "filename": "863fm.png",
+      "ground_truth": "863fm",
+      "predicted": "863fm",
+      "correct": true
+    },
+    {
+      "filename": "88k3p.png",
+      "ground_truth": "88k3p",
+      "predicted": "88k3p",
+      "correct": true
+    },
+    {
+      "filename": "8dm7h.png",
+      "ground_truth": "8dm7h",
+      "predicted": "8dm7h",
+      "correct": true
+    },
+    {
+      "filename": "8h364.png",
+      "ground_truth": "8h364",
+      "predicted": "8h364",
+      "correct": true
+    },
+    {
+      "filename": "8wheh.png",
+      "ground_truth": "8wheh",
+      "predicted": "8wheh",
+      "correct": true
+    },
+    {
+      "filename": "8wpg4.png",
+      "ground_truth": "8wpg4",
+      "predicted": "8wpg4",
+      "correct": true
+    },
+    {
+      "filename": "8y6r3.png",
+      "ground_truth": "8y6r3",
+      "predicted": "8y6r3",
+      "correct": true
+    },
+    {
+      "filename": "8y85c.png",
+      "ground_truth": "8y85c",
+      "predicted": "8y85c",
+      "correct": true
+    },
+    {
+      "filename": "a248a.png",
+      "ground_truth": "a248a",
+      "predicted": "a248a",
+      "correct": true
+    },
+    {
+      "filename": "a4ree.png",
+      "ground_truth": "a4ree",
+      "predicted": "a4ree",
+      "correct": true
+    },
+    {
+      "filename": "a5yye.png",
+      "ground_truth": "a5yye",
+      "predicted": "a5yye",
+      "correct": true
+    },
+    {
+      "filename": "a7rdd.png",
+      "ground_truth": "a7rdd",
+      "predicted": "a7rdd",
+      "correct": true
+    },
+    {
+      "filename": "ac5n2.png",
+      "ground_truth": "ac5n2",
+      "predicted": "ac5n2",
+      "correct": true
+    },
+    {
+      "filename": "acd8a.png",
+      "ground_truth": "acd8a",
+      "predicted": "acd8a",
+      "correct": true
+    },
+    {
+      "filename": "agn4e.png",
+      "ground_truth": "agn4e",
+      "predicted": "agn4e",
+      "correct": true
+    },
+    {
+      "filename": "ah4rm.png",
+      "ground_truth": "ah4rm",
+      "predicted": "ah4rm",
+      "correct": true
+    },
+    {
+      "filename": "aqun3.png",
+      "ground_truth": "aqun3",
+      "predicted": "aqun3",
+      "correct": true
+    },
+    {
+      "filename": "ar4by.png",
+      "ground_truth": "ar4by",
+      "predicted": "ar4by",
+      "correct": true
+    },
+    {
+      "filename": "aywre.png",
+      "ground_truth": "aywre",
+      "predicted": "aywre",
+      "correct": true
+    },
+    {
+      "filename": "b377n.png",
+      "ground_truth": "b377n",
+      "predicted": "b377n",
+      "correct": true
+    },
+    {
+      "filename": "b4rrx.png",
+      "ground_truth": "b4rrx",
+      "predicted": "b4rrx",
+      "correct": true
+    },
+    {
+      "filename": "b8eg2.png",
+      "ground_truth": "b8eg2",
+      "predicted": "b8eg2",
+      "correct": true
+    },
+    {
+      "filename": "ba57e.png",
+      "ground_truth": "ba57e",
+      "predicted": "ba57e",
+      "correct": true
+    },
+    {
+      "filename": "bdhe2.png",
+      "ground_truth": "bdhe2",
+      "predicted": "bdhe2",
+      "correct": true
+    },
+    {
+      "filename": "bgyy5.png",
+      "ground_truth": "bgyy5",
+      "predicted": "bgyy5",
+      "correct": true
+    },
+    {
+      "filename": "bknbg.png",
+      "ground_truth": "bknbg",
+      "predicted": "bknbg",
+      "correct": true
+    },
+    {
+      "filename": "bn7dw.png",
+      "ground_truth": "bn7dw",
+      "predicted": "bn7dw",
+      "correct": true
+    },
+    {
+      "filename": "br5a7.png",
+      "ground_truth": "br5a7",
+      "predicted": "br5a7",
+      "correct": true
+    },
+    {
+      "filename": "brkh6.png",
+      "ground_truth": "brkh6",
+      "predicted": "brkh6",
+      "correct": true
+    },
+    {
+      "filename": "bxfae.png",
+      "ground_truth": "bxfae",
+      "predicted": "bxfae",
+      "correct": true
+    },
+    {
+      "filename": "c38ng.png",
+      "ground_truth": "c38ng",
+      "predicted": "c38ng",
+      "correct": true
+    },
+    {
+      "filename": "c66ap.png",
+      "ground_truth": "c66ap",
+      "predicted": "c66ap",
+      "correct": true
+    },
+    {
+      "filename": "cbh8k.png",
+      "ground_truth": "cbh8k",
+      "predicted": "cbh8k",
+      "correct": true
+    },
+    {
+      "filename": "cd5wn.png",
+      "ground_truth": "cd5wn",
+      "predicted": "cd5wn",
+      "correct": true
+    },
+    {
+      "filename": "cee6e.png",
+      "ground_truth": "cee6e",
+      "predicted": "cee6e",
+      "correct": true
+    },
+    {
+      "filename": "cewy5.png",
+      "ground_truth": "cewy5",
+      "predicted": "cewy5",
+      "correct": true
+    },
+    {
+      "filename": "cfgrk.png",
+      "ground_truth": "cfgrk",
+      "predicted": "cfgrk",
+      "correct": true
+    },
+    {
+      "filename": "cfhmw.png",
+      "ground_truth": "cfhmw",
+      "predicted": "cfhmw",
+      "correct": true
+    },
+    {
+      "filename": "cfxwn.png",
+      "ground_truth": "cfxwn",
+      "predicted": "cfxwn",
+      "correct": true
+    },
+    {
+      "filename": "cg34b.png",
+      "ground_truth": "cg34b",
+      "predicted": "cg34b",
+      "correct": true
+    },
+    {
+      "filename": "ckgay.png",
+      "ground_truth": "ckgay",
+      "predicted": "ckgay",
+      "correct": true
+    },
+    {
+      "filename": "cm4w4.png",
+      "ground_truth": "cm4w4",
+      "predicted": "cm4w4",
+      "correct": true
+    },
+    {
+      "filename": "cme3k.png",
+      "ground_truth": "cme3k",
+      "predicted": "cme3k",
+      "correct": true
+    },
+    {
+      "filename": "cmk82.png",
+      "ground_truth": "cmk82",
+      "predicted": "cmk82",
+      "correct": true
+    },
+    {
+      "filename": "crw76.png",
+      "ground_truth": "crw76",
+      "predicted": "crw76",
+      "correct": true
+    },
+    {
+      "filename": "cwkbd.png",
+      "ground_truth": "cwkbd",
+      "predicted": "cwkbd",
+      "correct": true
+    },
+    {
+      "filename": "cx44n.png",
+      "ground_truth": "cx44n",
+      "predicted": "cx44n",
+      "correct": true
+    },
+    {
+      "filename": "cxc7r.png",
+      "ground_truth": "cxc7r",
+      "predicted": "cxc7r",
+      "correct": true
+    },
+    {
+      "filename": "d2pbc.png",
+      "ground_truth": "d2pbc",
+      "predicted": "d2pbc",
+      "correct": true
+    },
+    {
+      "filename": "d48ca.png",
+      "ground_truth": "d48ca",
+      "predicted": "d48ca",
+      "correct": true
+    },
+    {
+      "filename": "d4dm3.png",
+      "ground_truth": "d4dm3",
+      "predicted": "d4dm3",
+      "correct": true
+    },
+    {
+      "filename": "db3d4.png",
+      "ground_truth": "db3d4",
+      "predicted": "db3d4",
+      "correct": true
+    },
+    {
+      "filename": "debpc.png",
+      "ground_truth": "debpc",
+      "predicted": "debpc",
+      "correct": true
+    },
+    {
+      "filename": "df3rc.png",
+      "ground_truth": "df3rc",
+      "predicted": "df3rc",
+      "correct": true
+    },
+    {
+      "filename": "dg4ye.png",
+      "ground_truth": "dg4ye",
+      "predicted": "dg4ye",
+      "correct": true
+    },
+    {
+      "filename": "dg66p.png",
+      "ground_truth": "dg66p",
+      "predicted": "dg66b",
+      "correct": false
+    },
+    {
+      "filename": "dga7a.png",
+      "ground_truth": "dga7a",
+      "predicted": "dga7a",
+      "correct": true
+    },
+    {
+      "filename": "dwrm4.png",
+      "ground_truth": "dwrm4",
+      "predicted": "dwrm4",
+      "correct": true
+    },
+    {
+      "filename": "e2rr3.png",
+      "ground_truth": "e2rr3",
+      "predicted": "e2rr3",
+      "correct": true
+    },
+    {
+      "filename": "e7fb3.png",
+      "ground_truth": "e7fb3",
+      "predicted": "e7fb3",
+      "correct": true
+    },
+    {
+      "filename": "eb74r.png",
+      "ground_truth": "eb74r",
+      "predicted": "eb74r",
+      "correct": true
+    },
+    {
+      "filename": "edp2x.png",
+      "ground_truth": "edp2x",
+      "predicted": "edp2x",
+      "correct": true
+    },
+    {
+      "filename": "edyar.png",
+      "ground_truth": "edyar",
+      "predicted": "edyar",
+      "correct": true
+    },
+    {
+      "filename": "ee5n6.png",
+      "ground_truth": "ee5n6",
+      "predicted": "ee5n6",
+      "correct": true
+    },
+    {
+      "filename": "emm5r.png",
+      "ground_truth": "emm5r",
+      "predicted": "emm5r",
+      "correct": true
+    },
+    {
+      "filename": "exgka.png",
+      "ground_truth": "exgka",
+      "predicted": "exgka",
+      "correct": true
+    },
+    {
+      "filename": "eya5h.png",
+      "ground_truth": "eya5h",
+      "predicted": "eya5n",
+      "correct": false
+    },
+    {
+      "filename": "f367y.png",
+      "ground_truth": "f367y",
+      "predicted": "f367y",
+      "correct": true
+    },
+    {
+      "filename": "f4d2f.png",
+      "ground_truth": "f4d2f",
+      "predicted": "f4d2f",
+      "correct": true
+    },
+    {
+      "filename": "f4nnd.png",
+      "ground_truth": "f4nnd",
+      "predicted": "f4nnd",
+      "correct": true
+    },
+    {
+      "filename": "f5r8a.png",
+      "ground_truth": "f5r8a",
+      "predicted": "f5r8a",
+      "correct": true
+    },
+    {
+      "filename": "f677n.png",
+      "ground_truth": "f677n",
+      "predicted": "f677n",
+      "correct": true
+    },
+    {
+      "filename": "f7fe8.png",
+      "ground_truth": "f7fe8",
+      "predicted": "f7fe8",
+      "correct": true
+    },
+    {
+      "filename": "fa2f7.png",
+      "ground_truth": "fa2f7",
+      "predicted": "fa2f7",
+      "correct": true
+    },
+    {
+      "filename": "fb5be.png",
+      "ground_truth": "fb5be",
+      "predicted": "fb5be",
+      "correct": true
+    },
+    {
+      "filename": "ff5f8.png",
+      "ground_truth": "ff5f8",
+      "predicted": "ff5f8",
+      "correct": true
+    },
+    {
+      "filename": "fhdh5.png",
+      "ground_truth": "fhdh5",
+      "predicted": "fhdh5",
+      "correct": true
+    },
+    {
+      "filename": "fmb7x.png",
+      "ground_truth": "fmb7x",
+      "predicted": "fmb7x",
+      "correct": true
+    },
+    {
+      "filename": "fmp6f.png",
+      "ground_truth": "fmp6f",
+      "predicted": "fmp6f",
+      "correct": true
+    },
+    {
+      "filename": "frd6n.png",
+      "ground_truth": "frd6n",
+      "predicted": "frd6n",
+      "correct": true
+    },
+    {
+      "filename": "fxkep.png",
+      "ground_truth": "fxkep",
+      "predicted": "fxkep",
+      "correct": true
+    },
+    {
+      "filename": "g485f.png",
+      "ground_truth": "g485f",
+      "predicted": "g485f",
+      "correct": true
+    },
+    {
+      "filename": "g84e5.png",
+      "ground_truth": "g84e5",
+      "predicted": "g84e5",
+      "correct": true
+    },
+    {
+      "filename": "gad5g.png",
+      "ground_truth": "gad5g",
+      "predicted": "gad5g",
+      "correct": true
+    },
+    {
+      "filename": "ge4cw.png",
+      "ground_truth": "ge4cw",
+      "predicted": "ge4cw",
+      "correct": true
+    },
+    {
+      "filename": "ge6k3.png",
+      "ground_truth": "ge6k3",
+      "predicted": "ge6k3",
+      "correct": true
+    },
+    {
+      "filename": "ghkbx.png",
+      "ground_truth": "ghkbx",
+      "predicted": "ghkbx",
+      "correct": true
+    },
+    {
+      "filename": "gka6e.png",
+      "ground_truth": "gka6e",
+      "predicted": "gka6e",
+      "correct": true
+    },
+    {
+      "filename": "gn5y2.png",
+      "ground_truth": "gn5y2",
+      "predicted": "gn5y2",
+      "correct": true
+    },
+    {
+      "filename": "gxdye.png",
+      "ground_truth": "gxdye",
+      "predicted": "gxdye",
+      "correct": true
+    },
+    {
+      "filename": "h2y72.png",
+      "ground_truth": "h2y72",
+      "predicted": "h2y72",
+      "correct": true
+    },
+    {
+      "filename": "h2ya7.png",
+      "ground_truth": "h2ya7",
+      "predicted": "h2ya7",
+      "correct": true
+    },
+    {
+      "filename": "h42f2.png",
+      "ground_truth": "h42f2",
+      "predicted": "h42f2",
+      "correct": true
+    },
+    {
+      "filename": "h68d7.png",
+      "ground_truth": "h68d7",
+      "predicted": "h68d7",
+      "correct": true
+    },
+    {
+      "filename": "h764g.png",
+      "ground_truth": "h764g",
+      "predicted": "h764g",
+      "correct": true
+    },
+    {
+      "filename": "h7nmx.png",
+      "ground_truth": "h7nmx",
+      "predicted": "h7nmx",
+      "correct": true
+    },
+    {
+      "filename": "h88r8.png",
+      "ground_truth": "h88r8",
+      "predicted": "h88r8",
+      "correct": true
+    },
+    {
+      "filename": "hadhw.png",
+      "ground_truth": "hadhw",
+      "predicted": "hadhw",
+      "correct": true
+    },
+    {
+      "filename": "hae4g.png",
+      "ground_truth": "hae4g",
+      "predicted": "hae4g",
+      "correct": true
+    },
+    {
+      "filename": "hb6wm.png",
+      "ground_truth": "hb6wm",
+      "predicted": "hb6wm",
+      "correct": true
+    },
+    {
+      "filename": "hdwb8.png",
+      "ground_truth": "hdwb8",
+      "predicted": "hdwb8",
+      "correct": true
+    },
+    {
+      "filename": "he8y8.png",
+      "ground_truth": "he8y8",
+      "predicted": "he8y8",
+      "correct": true
+    },
+    {
+      "filename": "hef5h.png",
+      "ground_truth": "hef5h",
+      "predicted": "hef5h",
+      "correct": true
+    },
+    {
+      "filename": "her4b.png",
+      "ground_truth": "her4b",
+      "predicted": "her4b",
+      "correct": true
+    },
+    {
+      "filename": "hnghm.png",
+      "ground_truth": "hnghm",
+      "predicted": "hnghm",
+      "correct": true
+    },
+    {
+      "filename": "hryee.png",
+      "ground_truth": "hryee",
+      "predicted": "hryee",
+      "correct": true
+    },
+    {
+      "filename": "jns5x.png",
+      "ground_truth": "jns5x",
+      "predicted": "jns5x",
+      "correct": true
+    },
+    {
+      "filename": "k3y28.png",
+      "ground_truth": "k3y28",
+      "predicted": "k3y28",
+      "correct": true
+    },
+    {
+      "filename": "k7e4d.png",
+      "ground_truth": "k7e4d",
+      "predicted": "k7e4d",
+      "correct": true
+    },
+    {
+      "filename": "kdwe4.png",
+      "ground_truth": "kdwe4",
+      "predicted": "kdwe4",
+      "correct": true
+    },
+    {
+      "filename": "kp8n4.png",
+      "ground_truth": "kp8n4",
+      "predicted": "kp8n4",
+      "correct": true
+    },
+    {
+      "filename": "krrem.png",
+      "ground_truth": "krrem",
+      "predicted": "krrem",
+      "correct": true
+    },
+    {
+      "filename": "kwgmm.png",
+      "ground_truth": "kwgmm",
+      "predicted": "kwgmm",
+      "correct": true
+    },
+    {
+      "filename": "kwuzu.png",
+      "ground_truth": "kwuzu",
+      "predicted": "kwuzu",
+      "correct": true
+    },
+    {
+      "filename": "kxbg8.png",
+      "ground_truth": "kxbg8",
+      "predicted": "kxbg8",
+      "correct": true
+    },
+    {
+      "filename": "m23e7.png",
+      "ground_truth": "m23e7",
+      "predicted": "m23e7",
+      "correct": true
+    },
+    {
+      "filename": "m3h88.png",
+      "ground_truth": "m3h88",
+      "predicted": "m3h88",
+      "correct": true
+    },
+    {
+      "filename": "m84m3.png",
+      "ground_truth": "m84m3",
+      "predicted": "m84m3",
+      "correct": true
+    },
+    {
+      "filename": "m8pg7.png",
+      "ground_truth": "m8pg7",
+      "predicted": "m8pg7",
+      "correct": true
+    },
+    {
+      "filename": "ma4yx.png",
+      "ground_truth": "ma4yx",
+      "predicted": "ma4yx",
+      "correct": true
+    },
+    {
+      "filename": "macpp.png",
+      "ground_truth": "macpp",
+      "predicted": "macpp",
+      "correct": true
+    },
+    {
+      "filename": "manyk.png",
+      "ground_truth": "manyk",
+      "predicted": "manyk",
+      "correct": true
+    },
+    {
+      "filename": "mbhxg.png",
+      "ground_truth": "mbhxg",
+      "predicted": "mbhxg",
+      "correct": true
+    },
+    {
+      "filename": "menyr.png",
+      "ground_truth": "menyr",
+      "predicted": "menyr",
+      "correct": true
+    },
+    {
+      "filename": "mexed.png",
+      "ground_truth": "mexed",
+      "predicted": "mexed",
+      "correct": true
+    },
+    {
+      "filename": "mgphg.png",
+      "ground_truth": "mgphg",
+      "predicted": "mgphg",
+      "correct": true
+    },
+    {
+      "filename": "mh22g.png",
+      "ground_truth": "mh22g",
+      "predicted": "mh22g",
+      "correct": true
+    },
+    {
+      "filename": "mknne.png",
+      "ground_truth": "mknne",
+      "predicted": "mknne",
+      "correct": true
+    },
+    {
+      "filename": "mnb4n.png",
+      "ground_truth": "mnb4n",
+      "predicted": "mnb4n",
+      "correct": true
+    },
+    {
+      "filename": "mnc8r.png",
+      "ground_truth": "mnc8r",
+      "predicted": "mnc8r",
+      "correct": true
+    },
+    {
+      "filename": "mrg66.png",
+      "ground_truth": "mrg66",
+      "predicted": "mrg66",
+      "correct": true
+    },
+    {
+      "filename": "mrgm5.png",
+      "ground_truth": "mrgm5",
+      "predicted": "mrgm5",
+      "correct": true
+    },
+    {
+      "filename": "myarn.png",
+      "ground_truth": "myarn",
+      "predicted": "myarn",
+      "correct": true
+    },
+    {
+      "filename": "n3fw7.png",
+      "ground_truth": "n3fw7",
+      "predicted": "n3fw7",
+      "correct": true
+    },
+    {
+      "filename": "n3r5n.png",
+      "ground_truth": "n3r5n",
+      "predicted": "n3r5n",
+      "correct": true
+    },
+    {
+      "filename": "n62fc.png",
+      "ground_truth": "n62fc",
+      "predicted": "n62fc",
+      "correct": true
+    },
+    {
+      "filename": "n6m7b.png",
+      "ground_truth": "n6m7b",
+      "predicted": "n6m7b",
+      "correct": true
+    },
+    {
+      "filename": "n6wg4.png",
+      "ground_truth": "n6wg4",
+      "predicted": "n6wg4",
+      "correct": true
+    },
+    {
+      "filename": "n77mb.png",
+      "ground_truth": "n77mb",
+      "predicted": "n77mb",
+      "correct": true
+    },
+    {
+      "filename": "n85ha.png",
+      "ground_truth": "n85ha",
+      "predicted": "n85ha",
+      "correct": true
+    },
+    {
+      "filename": "n8dak.png",
+      "ground_truth": "n8dak",
+      "predicted": "n8dak",
+      "correct": true
+    },
+    {
+      "filename": "n8wyy.png",
+      "ground_truth": "n8wyy",
+      "predicted": "n8wyy",
+      "correct": true
+    },
+    {
+      "filename": "namme.png",
+      "ground_truth": "namme",
+      "predicted": "namme",
+      "correct": true
+    },
+    {
+      "filename": "neb78.png",
+      "ground_truth": "neb78",
+      "predicted": "neb78",
+      "correct": true
+    },
+    {
+      "filename": "necp5.png",
+      "ground_truth": "necp5",
+      "predicted": "necp5",
+      "correct": true
+    },
+    {
+      "filename": "ng5c3.png",
+      "ground_truth": "ng5c3",
+      "predicted": "ng5c3",
+      "correct": true
+    },
+    {
+      "filename": "nht9w.png",
+      "ground_truth": "nht9w",
+      "predicted": "nht9w",
+      "correct": true
+    },
+    {
+      "filename": "nmn73.png",
+      "ground_truth": "nmn73",
+      "predicted": "nmn73",
+      "correct": true
+    },
+    {
+      "filename": "nnap8.png",
+      "ground_truth": "nnap8",
+      "predicted": "nnap8",
+      "correct": true
+    },
+    {
+      "filename": "np2rh.png",
+      "ground_truth": "np2rh",
+      "predicted": "np2rh",
+      "correct": true
+    },
+    {
+      "filename": "np3ay.png",
+      "ground_truth": "np3ay",
+      "predicted": "np3ay",
+      "correct": true
+    },
+    {
+      "filename": "nrwyp.png",
+      "ground_truth": "nrwyp",
+      "predicted": "nrwyp",
+      "correct": true
+    },
+    {
+      "filename": "nwagg.png",
+      "ground_truth": "nwagg",
+      "predicted": "nwagg",
+      "correct": true
+    },
+    {
+      "filename": "nx7rk.png",
+      "ground_truth": "nx7rk",
+      "predicted": "nx7rk",
+      "correct": true
+    },
+    {
+      "filename": "nyke5.png",
+      "ground_truth": "nyke5",
+      "predicted": "nyke5",
+      "correct": true
+    },
+    {
+      "filename": "oieqz.png",
+      "ground_truth": "oieqz",
+      "predicted": "oieqz",
+      "correct": true
+    },
+    {
+      "filename": "p2w2p.png",
+      "ground_truth": "p2w2p",
+      "predicted": "p2w2p",
+      "correct": true
+    },
+    {
+      "filename": "p3r84.png",
+      "ground_truth": "p3r84",
+      "predicted": "p3r84",
+      "correct": true
+    },
+    {
+      "filename": "p78dk.png",
+      "ground_truth": "p78dk",
+      "predicted": "p78dk",
+      "correct": true
+    },
+    {
+      "filename": "p78x2.png",
+      "ground_truth": "p78x2",
+      "predicted": "p78x2",
+      "correct": true
+    },
+    {
+      "filename": "pahg5.png",
+      "ground_truth": "pahg5",
+      "predicted": "pahg5",
+      "correct": true
+    },
+    {
+      "filename": "pamwd.png",
+      "ground_truth": "pamwd",
+      "predicted": "pamwd",
+      "correct": true
+    },
+    {
+      "filename": "pb5gb.png",
+      "ground_truth": "pb5gb",
+      "predicted": "pb5gb",
+      "correct": true
+    },
+    {
+      "filename": "pc446.png",
+      "ground_truth": "pc446",
+      "predicted": "pc446",
+      "correct": true
+    },
+    {
+      "filename": "pcmbc.png",
+      "ground_truth": "pcmbc",
+      "predicted": "pcmbc",
+      "correct": true
+    },
+    {
+      "filename": "pcxpf.png",
+      "ground_truth": "pcxpf",
+      "predicted": "pcxpf",
+      "correct": true
+    },
+    {
+      "filename": "pd64f.png",
+      "ground_truth": "pd64f",
+      "predicted": "pd64f",
+      "correct": true
+    },
+    {
+      "filename": "pe7xm.png",
+      "ground_truth": "pe7xm",
+      "predicted": "pe7xm",
+      "correct": true
+    },
+    {
+      "filename": "pedwn.png",
+      "ground_truth": "pedwn",
+      "predicted": "pedwn",
+      "correct": true
+    },
+    {
+      "filename": "pewkw.png",
+      "ground_truth": "pewkw",
+      "predicted": "pewkw",
+      "correct": true
+    },
+    {
+      "filename": "pfpe3.png",
+      "ground_truth": "pfpe3",
+      "predicted": "pfpe3",
+      "correct": true
+    },
+    {
+      "filename": "pmhmx.png",
+      "ground_truth": "pmhmx",
+      "predicted": "pmhmx",
+      "correct": true
+    },
+    {
+      "filename": "pn7k8.png",
+      "ground_truth": "pn7k8",
+      "predicted": "pn7k8",
+      "correct": true
+    },
+    {
+      "filename": "prhg7.png",
+      "ground_truth": "prhg7",
+      "predicted": "prhg7",
+      "correct": true
+    },
+    {
+      "filename": "pwe32.png",
+      "ground_truth": "pwe32",
+      "predicted": "pwe32",
+      "correct": true
+    },
+    {
+      "filename": "pyn8y.png",
+      "ground_truth": "pyn8y",
+      "predicted": "pyn8y",
+      "correct": true
+    },
+    {
+      "filename": "r2c87.png",
+      "ground_truth": "r2c87",
+      "predicted": "r2c87",
+      "correct": true
+    },
+    {
+      "filename": "r3rc4.png",
+      "ground_truth": "r3rc4",
+      "predicted": "r3rc4",
+      "correct": true
+    },
+    {
+      "filename": "r4xyk.png",
+      "ground_truth": "r4xyk",
+      "predicted": "r4xyk",
+      "correct": true
+    },
+    {
+      "filename": "r57pn.png",
+      "ground_truth": "r57pn",
+      "predicted": "r57pn",
+      "correct": true
+    },
+    {
+      "filename": "r5855.png",
+      "ground_truth": "r5855",
+      "predicted": "r5855",
+      "correct": true
+    },
+    {
+      "filename": "r5wdy.png",
+      "ground_truth": "r5wdy",
+      "predicted": "r5wdy",
+      "correct": true
+    },
+    {
+      "filename": "r8nxg.png",
+      "ground_truth": "r8nxg",
+      "predicted": "r8nxg",
+      "correct": true
+    },
+    {
+      "filename": "ra626.png",
+      "ground_truth": "ra626",
+      "predicted": "ra526",
+      "correct": false
+    },
+    {
+      "filename": "rgmgx.png",
+      "ground_truth": "rgmgx",
+      "predicted": "rgmgx",
+      "correct": true
+    },
+    {
+      "filename": "rmbb8.png",
+      "ground_truth": "rmbb8",
+      "predicted": "rmbb8",
+      "correct": true
+    },
+    {
+      "filename": "rn886.png",
+      "ground_truth": "rn886",
+      "predicted": "rn886",
+      "correct": true
+    },
+    {
+      "filename": "rw5ep.png",
+      "ground_truth": "rw5ep",
+      "predicted": "rw5ep",
+      "correct": true
+    },
+    {
+      "filename": "w8cab.png",
+      "ground_truth": "w8cab",
+      "predicted": "w8cab",
+      "correct": true
+    },
+    {
+      "filename": "wckfb.png",
+      "ground_truth": "wckfb",
+      "predicted": "wckfb",
+      "correct": true
+    },
+    {
+      "filename": "wcyfy.png",
+      "ground_truth": "wcyfy",
+      "predicted": "wcyfy",
+      "correct": true
+    },
+    {
+      "filename": "wegrm.png",
+      "ground_truth": "wegrm",
+      "predicted": "wegrm",
+      "correct": true
+    },
+    {
+      "filename": "wew3h.png",
+      "ground_truth": "wew3h",
+      "predicted": "wew3h",
+      "correct": true
+    },
+    {
+      "filename": "wgebw.png",
+      "ground_truth": "wgebw",
+      "predicted": "wgebw",
+      "correct": true
+    },
+    {
+      "filename": "wk4g2.png",
+      "ground_truth": "wk4g2",
+      "predicted": "wk4g2",
+      "correct": true
+    },
+    {
+      "filename": "wkp5a.png",
+      "ground_truth": "wkp5a",
+      "predicted": "wkp5a",
+      "correct": true
+    },
+    {
+      "filename": "wnhmd.png",
+      "ground_truth": "wnhmd",
+      "predicted": "wnhmd",
+      "correct": true
+    },
+    {
+      "filename": "wnkrb.png",
+      "ground_truth": "wnkrb",
+      "predicted": "wnkrb",
+      "correct": true
+    },
+    {
+      "filename": "wpfy4.png",
+      "ground_truth": "wpfy4",
+      "predicted": "wpfy4",
+      "correct": true
+    },
+    {
+      "filename": "wrm42.png",
+      "ground_truth": "wrm42",
+      "predicted": "wrm42",
+      "correct": true
+    },
+    {
+      "filename": "wwbgp.png",
+      "ground_truth": "wwbgp",
+      "predicted": "wwbgp",
+      "correct": true
+    },
+    {
+      "filename": "x6p47.png",
+      "ground_truth": "x6p47",
+      "predicted": "x6p47",
+      "correct": true
+    },
+    {
+      "filename": "x7phg.png",
+      "ground_truth": "x7phg",
+      "predicted": "x7phg",
+      "correct": true
+    },
+    {
+      "filename": "xar35.png",
+      "ground_truth": "xar35",
+      "predicted": "xar35",
+      "correct": true
+    },
+    {
+      "filename": "xgpmm.png",
+      "ground_truth": "xgpmm",
+      "predicted": "xgpmm",
+      "correct": true
+    },
+    {
+      "filename": "xh6gh.png",
+      "ground_truth": "xh6gh",
+      "predicted": "xh6gh",
+      "correct": true
+    },
+    {
+      "filename": "xhp3h.png",
+      "ground_truth": "xhp3h",
+      "predicted": "xhp3h",
+      "correct": true
+    },
+    {
+      "filename": "xkn4d.png",
+      "ground_truth": "xkn4d",
+      "predicted": "xkn4d",
+      "correct": true
+    },
+    {
+      "filename": "xkr86.png",
+      "ground_truth": "xkr86",
+      "predicted": "xkr86",
+      "correct": true
+    },
+    {
+      "filename": "xmd5e.png",
+      "ground_truth": "xmd5e",
+      "predicted": "xmd5e",
+      "correct": true
+    },
+    {
+      "filename": "xr4ce.png",
+      "ground_truth": "xr4ce",
+      "predicted": "xr4ce",
+      "correct": true
+    },
+    {
+      "filename": "xw74g.png",
+      "ground_truth": "xw74g",
+      "predicted": "xw74g",
+      "correct": true
+    },
+    {
+      "filename": "y5wbx.png",
+      "ground_truth": "y5wbx",
+      "predicted": "y5wbx",
+      "correct": true
+    },
+    {
+      "filename": "y6e7b.png",
+      "ground_truth": "y6e7b",
+      "predicted": "y6e7b",
+      "correct": true
+    },
+    {
+      "filename": "y8fy3.png",
+      "ground_truth": "y8fy3",
+      "predicted": "y8fy3",
+      "correct": true
+    },
+    {
+      "filename": "yamn5.png",
+      "ground_truth": "yamn5",
+      "predicted": "yman5",
+      "correct": false
+    },
+    {
+      "filename": "ybafy.png",
+      "ground_truth": "ybafy",
+      "predicted": "ybafy",
+      "correct": true
+    },
+    {
+      "filename": "ybena.png",
+      "ground_truth": "ybena",
+      "predicted": "ybena",
+      "correct": true
+    },
+    {
+      "filename": "yd6ep.png",
+      "ground_truth": "yd6ep",
+      "predicted": "yd6ep",
+      "correct": true
+    },
+    {
+      "filename": "yfg7c.png",
+      "ground_truth": "yfg7c",
+      "predicted": "yfg7c",
+      "correct": true
+    },
+    {
+      "filename": "yh634.png",
+      "ground_truth": "yh634",
+      "predicted": "yh634",
+      "correct": true
+    },
+    {
+      "filename": "ykryk.png",
+      "ground_truth": "ykryk",
+      "predicted": "ykryk",
+      "correct": true
+    },
+    {
+      "filename": "yr38d.png",
+      "ground_truth": "yr38d",
+      "predicted": "yr38d",
+      "correct": true
+    },
+    {
+      "filename": "yw3f5.png",
+      "ground_truth": "yw3f5",
+      "predicted": "yw3f5",
+      "correct": true
+    },
+    {
+      "filename": "yx5pg.png",
+      "ground_truth": "yx5pg",
+      "predicted": "yx5pg",
+      "correct": true
+    },
+    {
+      "filename": "zofox.png",
+      "ground_truth": "zofox",
+      "predicted": "zofox",
+      "correct": true
+    }
+  ]
+}
