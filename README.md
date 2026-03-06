@@ -152,7 +152,7 @@ python gui_app.py
 Ví dụ:
 ```csv
 mst,ho_ten
-079203002600,Phạm Minh Hoàng
+8676326199,Phạm Xuân B
 8673726199,Nguyễn Văn A
 ```
 
