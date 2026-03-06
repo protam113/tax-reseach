@@ -18,7 +18,7 @@ def load_config():
     }
 
 
-def get_scraper(source="tax-3rd", headless=False, parallel=None):
+def get_scraper(source="tax-3rd", headless=False, parallel=None, progress_callback=None):
     """
     Factory function để tạo scraper phù hợp
     
@@ -26,6 +26,7 @@ def get_scraper(source="tax-3rd", headless=False, parallel=None):
         source: "tax-gov" hoặc "tax-3rd"
         headless: True/False
         parallel: None (auto từ config), True (force parallel), False (force single), hoặc số workers
+        progress_callback: Callback function(current, total, result) để update progress
         
     Returns:
         Scraper instance
@@ -35,11 +36,11 @@ def get_scraper(source="tax-3rd", headless=False, parallel=None):
         if parallel and isinstance(parallel, int) and parallel > 1:
             # Parallel mode với số workers chỉ định
             from scraper_gov_parallel import ParallelTaxGovScraper
-            return ParallelTaxGovScraper(num_workers=parallel, headless=headless)
+            return ParallelTaxGovScraper(num_workers=parallel, headless=headless, progress_callback=progress_callback)
         elif parallel is True:
             # Parallel mode với default 3 workers
             from scraper_gov_parallel import ParallelTaxGovScraper
-            return ParallelTaxGovScraper(num_workers=3, headless=headless)
+            return ParallelTaxGovScraper(num_workers=3, headless=headless, progress_callback=progress_callback)
         else:
             # Single mode
             from scraper_gov import TaxGovScraper

@@ -356,21 +356,30 @@ class TaxLookupGUI:
             parallel = self.num_workers_var.get() if self.parallel_var.get() else False
             headless = self.headless_var.get()
             
-            self.current_scraper = get_scraper(self.selected_source, headless=headless, parallel=parallel)
+            # Khởi tạo result_data
+            total = len(self.input_data)
+            self.result_data = [None] * total
+            
+            # Callback để update progress từ scraper
+            def progress_callback(current, total, result=None):
+                self.root.after(0, lambda: self.update_progress_with_result(current, total, result))
+            
+            self.current_scraper = get_scraper(
+                self.selected_source, 
+                headless=headless, 
+                parallel=parallel,
+                progress_callback=progress_callback
+            )
             self.current_scraper.start()
             
-            self.result_data = []
-            total = len(self.input_data)
+            # Gọi lookup_batch với TẤT CẢ items (cả single và parallel mode)
+            results = self.current_scraper.lookup_batch(self.input_data)
             
-            for i, item in enumerate(self.input_data):
-                if self.stop_requested:
-                    break
-                
-                result = self.current_scraper.lookup_batch([item])[0]
-                self.result_data.append(result)
-                
-                # Update UI
-                self.root.after(0, lambda i=i: self.update_progress(i+1, total))
+            # Lưu kết quả cuối cùng (đảm bảo không có None)
+            self.result_data = results
+            
+            # Update progress cuối cùng
+            self.root.after(0, lambda: self.update_progress(total, total))
             
             self.current_scraper.close()
             self.root.after(0, self.search_complete)
@@ -382,6 +391,21 @@ class TaxLookupGUI:
         self.progress['value'] = current
         self.progress_label.config(text=f"{current}/{total}")
         self.refresh_table()
+    
+    def update_progress_with_result(self, current, total, result):
+        """Update progress và thêm result vào danh sách ngay lập tức"""
+        if result:
+            # Khởi tạo result_data nếu chưa có
+            if not self.result_data or len(self.result_data) != total:
+                self.result_data = [None] * total
+            
+            # Tìm index của result dựa vào MST
+            for i, inp in enumerate(self.input_data):
+                if inp.get('mst') == result.mst:
+                    self.result_data[i] = result
+                    break
+        
+        self.update_progress(current, total)
     
     def search_complete(self):
         self.is_searching = False

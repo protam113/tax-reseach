@@ -52,6 +52,16 @@ class WorkerBrowser:
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option('useAutomationExtension', False)
         
+        # Mỗi worker có port riêng để tránh conflict
+        debug_port = 9222 + self.worker_id
+        options.add_argument(f'--remote-debugging-port={debug_port}')
+        
+        # Mỗi worker có user-data-dir riêng
+        from pathlib import Path
+        profile_dir = Path(f"browser_profiles/worker_{self.worker_id}")
+        profile_dir.mkdir(parents=True, exist_ok=True)
+        options.add_argument(f'--user-data-dir={profile_dir.absolute()}')
+        
         # Random user agent
         user_agents = [
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122.0.0.0 Safari/537.36',
@@ -60,10 +70,11 @@ class WorkerBrowser:
         ]
         options.add_argument(f'user-agent={user_agents[self.worker_id % len(user_agents)]}')
         
+        # Tạo browser instance riêng cho worker này
         self.driver = webdriver.Chrome(options=options)
         self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         
-        print(f"  ✓ Worker {self.worker_id} sẵn sàng")
+        print(f"  ✓ Worker {self.worker_id} sẵn sàng (Browser riêng, port {debug_port})")
         
     def close(self):
         """Đóng browser"""
@@ -143,40 +154,66 @@ class WorkerBrowser:
                 url = f"{BASE}/tcnnt/mstcn.jsp"
                 self.driver.get(url)
                 
-                WebDriverWait(self.driver, 10).until(
+                # Đợi form load xong
+                WebDriverWait(self.driver, 15).until(
                     EC.presence_of_element_located((By.NAME, "mst"))
                 )
                 
+                # Đợi thêm để đảm bảo form hoàn toàn sẵn sàng
                 time.sleep(2)
                 
-                # Nhập MST
-                mst_input = self.driver.find_element(By.NAME, "mst")
+                # Nhập MST với verification
+                mst_input = WebDriverWait(self.driver, 10).until(
+                    EC.element_to_be_clickable((By.NAME, "mst"))
+                )
                 mst_input.clear()
+                time.sleep(0.3)
+                
+                # Nhập từng ký tự và verify
                 for char in q:
                     mst_input.send_keys(char)
-                    time.sleep(random.uniform(0.1, 0.3))
+                    time.sleep(random.uniform(0.15, 0.25))
                 
-                # Nhập họ tên
+                # Verify MST đã nhập đúng
+                time.sleep(0.5)
+                entered_mst = mst_input.get_attribute('value')
+                if entered_mst != q:
+                    print(f"[Worker {self.worker_id}] ⚠️ MST nhập sai: '{entered_mst}' != '{q}', retry...")
+                    if attempt < max_attempts - 1:
+                        time.sleep(2)
+                        continue
+                    record.loi = f"Không thể nhập MST đúng"
+                    break
+                
+                # Nhập họ tên với verification
                 if ho_ten:
                     try:
                         time.sleep(0.5)
-                        fullname_input = self.driver.find_element(By.NAME, "fullname")
+                        fullname_input = WebDriverWait(self.driver, 5).until(
+                            EC.element_to_be_clickable((By.NAME, "fullname"))
+                        )
                         fullname_input.clear()
+                        time.sleep(0.3)
                         for char in ho_ten:
                             fullname_input.send_keys(char)
-                            time.sleep(random.uniform(0.05, 0.15))
+                            time.sleep(random.uniform(0.08, 0.15))
+                        time.sleep(0.3)
                     except:
                         pass
                 
-                # Nhập địa chỉ
+                # Nhập địa chỉ với verification
                 if dia_chi:
                     try:
                         time.sleep(0.5)
-                        address_input = self.driver.find_element(By.NAME, "address")
+                        address_input = WebDriverWait(self.driver, 5).until(
+                            EC.element_to_be_clickable((By.NAME, "address"))
+                        )
                         address_input.clear()
+                        time.sleep(0.3)
                         for char in dia_chi:
                             address_input.send_keys(char)
-                            time.sleep(random.uniform(0.05, 0.15))
+                            time.sleep(random.uniform(0.08, 0.15))
+                        time.sleep(0.3)
                     except:
                         pass
                 
@@ -188,24 +225,50 @@ class WorkerBrowser:
                         time.sleep(3)
                         continue
                     record.loi = "Không thể giải CAPTCHA"
-                    record.url = self.driver.current_url
+                    try:
+                        record.url = self.driver.current_url
+                    except:
+                        record.url = ""
                     break
                 
-                # Nhập CAPTCHA
-                captcha_input = self.driver.find_element(By.ID, "captcha")
+                # Nhập CAPTCHA với verification
+                captcha_input = WebDriverWait(self.driver, 10).until(
+                    EC.element_to_be_clickable((By.ID, "captcha"))
+                )
                 captcha_input.clear()
                 time.sleep(0.5)
+                
                 for char in captcha_text:
                     captcha_input.send_keys(char)
-                    time.sleep(random.uniform(0.15, 0.35))
+                    time.sleep(random.uniform(0.2, 0.4))
                 
-                time.sleep(random.uniform(0.5, 1.0))
+                # Verify CAPTCHA đã nhập đúng
+                time.sleep(0.5)
+                entered_captcha = captcha_input.get_attribute('value')
+                if entered_captcha != captcha_text:
+                    print(f"[Worker {self.worker_id}] ⚠️ CAPTCHA nhập sai: '{entered_captcha}' != '{captcha_text}', retry...")
+                    if attempt < max_attempts - 1:
+                        time.sleep(2)
+                        continue
+                    record.loi = f"Không thể nhập CAPTCHA đúng"
+                    break
                 
-                # Submit
-                search_btn = self.driver.find_element(By.CSS_SELECTOR, "input.subBtn")
+                # Đợi trước khi submit
+                time.sleep(random.uniform(0.8, 1.5))
+                
+                # Submit với explicit wait
+                search_btn = WebDriverWait(self.driver, 10).until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, "input.subBtn"))
+                )
                 search_btn.click()
                 
                 time.sleep(3)
+                
+                # Lấy URL ngay sau khi submit
+                try:
+                    current_url = self.driver.current_url
+                except:
+                    current_url = ""
                 
                 # Parse kết quả
                 soup = BeautifulSoup(self.driver.page_source, "html.parser")
@@ -216,13 +279,13 @@ class WorkerBrowser:
                         time.sleep(5)
                         continue
                     record.loi = "Không tìm thấy kết quả"
-                    record.url = self.driver.current_url
+                    record.url = current_url
                     break
                 
                 rows = result_table.find_all("tr")
                 if len(rows) < 2:
                     record.loi = "Không có dữ liệu"
-                    record.url = self.driver.current_url
+                    record.url = current_url
                     break
                 
                 data_row = rows[1]
@@ -233,11 +296,11 @@ class WorkerBrowser:
                     record.ten_nnt = cells[2].get_text(strip=True)
                     record.co_quan_thue = cells[3].get_text(strip=True)
                     record.trang_thai = cells[4].get_text(strip=True)
-                    record.url = self.driver.current_url
+                    record.url = current_url
                     break
                 else:
                     record.loi = "Cấu trúc bảng không đúng"
-                    record.url = self.driver.current_url
+                    record.url = current_url
                     break
                     
             except Exception as e:
@@ -249,10 +312,9 @@ class WorkerBrowser:
                     
                 record.loi = error_msg
                 try:
-                    if self.driver:
-                        record.url = self.driver.current_url
+                    record.url = self.driver.current_url
                 except:
-                    pass
+                    record.url = ""
                 break
         
         # Đóng tab cũ và mở tab mới sau mỗi lần tra cứu
@@ -264,11 +326,14 @@ class WorkerBrowser:
 class ParallelTaxGovScraper:
     """Quản lý nhiều browser workers"""
     
-    def __init__(self, num_workers: int = 3, headless: bool = True):
+    def __init__(self, num_workers: int = 3, headless: bool = True, progress_callback=None):
         self.num_workers = num_workers
         self.headless = headless
         self.workers = []
         self.print_lock = Lock()
+        self.progress_callback = progress_callback  # Callback để update progress
+        self.completed_count = 0  # Đếm số item đã hoàn thành
+        self.total_count = 0  # Tổng số items
         
     def __enter__(self):
         self.start()
@@ -285,6 +350,9 @@ class ParallelTaxGovScraper:
             worker = WorkerBrowser(worker_id=i+1, headless=self.headless)
             worker.start()
             self.workers.append(worker)
+            # Delay nhỏ giữa các worker để tránh conflict
+            if i < self.num_workers - 1:
+                time.sleep(random.uniform(1.0, 2.0))
         print()
         
     def close(self):
@@ -314,9 +382,15 @@ class ParallelTaxGovScraper:
                 print(f"[Worker {worker.worker_id}]   ❌ {result.loi}")
             else:
                 print(f"[Worker {worker.worker_id}]   ✅ {result.ten_nnt}")
+            
+            # Update completed count và gọi callback
+            self.completed_count += 1
+            if self.progress_callback:
+                self.progress_callback(self.completed_count, self.total_count, result)
         
-        # Delay giữa các request
-        time.sleep(random.uniform(2.0, 4.0))
+        # Delay dài hơn giữa các request để tránh rate limit
+        # Với parallel, mỗi worker nên đợi 4-6 giây
+        time.sleep(random.uniform(4.0, 6.0))
         
         return result
     
@@ -326,14 +400,24 @@ class ParallelTaxGovScraper:
         if total == 0:
             return []
         
+        self.total_count = total
+        self.completed_count = 0
+        
         print(f"🔍 Bắt đầu tra cứu {total} MST với {self.num_workers} workers...\n")
         
         results = [None] * total
         
         with ThreadPoolExecutor(max_workers=self.num_workers) as executor:
             future_to_index = {}
+            
+            # Submit tasks với staggered start để tránh tất cả workers cùng request một lúc
             for i, item in enumerate(records_input):
                 worker = self.workers[i % self.num_workers]
+                
+                # Delay nhỏ giữa các submission để stagger requests
+                if i > 0 and i % self.num_workers == 0:
+                    time.sleep(random.uniform(0.5, 1.5))
+                
                 future = executor.submit(self._process_item, worker, item, i+1, total)
                 future_to_index[future] = i
             
